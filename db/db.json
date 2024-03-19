@@ -1,0 +1,207 @@
+{
+  "admin": [
+    {
+      "id": "5944",
+      "value": {
+        "firstName": "admin",
+        "lastName": "baru",
+        "email": "adminbaru@gmail.com",
+        "username": "adminbaru",
+        "password": "123456",
+        "role": "admin"
+      }
+    },
+    {
+      "id": "c202",
+      "value": {
+        "firstName": "admin",
+        "lastName": "lama",
+        "email": "adminlama@gmail.com",
+        "username": "adminlama",
+        "password": "123456",
+        "role": "super_admin"
+      }
+    },
+    {
+      "id": "dab2",
+      "value": {
+        "firstName": "admin",
+        "lastName": "baru",
+        "email": "adminbarujoin@gmail.com",
+        "username": "adminbarujoin",
+        "password": "123456",
+        "role": "admin"
+      }
+    },
+    {
+      "id": "9566",
+      "value": {
+        "firstName": "adminbaru",
+        "lastName": "barubanget",
+        "email": "barubangetjadiadmin@gmail.com",
+        "username": "barujadiadmin",
+        "password": "123456",
+        "role": "admin"
+      }
+    }
+  ],
+  "users": [
+    {
+      "id": "fa7a",
+      "firstName": "admin",
+      "lastName": "percobaan",
+      "email": "adminbercobaan@gmail.com",
+      "username": "adminpercobaan",
+      "password": "123456",
+      "role": "admin"
+    },
+    {
+      "id": "1604",
+      "firstName": "admin",
+      "lastName": "percobaan",
+      "email": "adminbercobaan1@gmail.com",
+      "username": "adminpercobaan1",
+      "password": "123456",
+      "role": "superadmin"
+    },
+    {
+      "id": "db24",
+      "firstName": "dwdw",
+      "lastName": "awdwd",
+      "email": "awdawd@gmail.com",
+      "username": " mustofawho",
+      "password": "123456"
+    },
+    {
+      "id": "7aab",
+      "firstName": "admin",
+      "lastName": "admin",
+      "email": "admin@gmail.com",
+      "username": "admininicobacoba",
+      "password": "123456"
+    },
+    {
+      "id": "f9e2"
+    },
+    {
+      "id": "a3d2"
+    },
+    {
+      "id": "8569"
+    },
+    {
+      "id": "2c12"
+    },
+    {
+      "id": "eaf1"
+    },
+    {
+      "id": "7211"
+    },
+    {
+      "id": "7919"
+    },
+    {
+      "id": "030b"
+    },
+    {
+      "id": "b156"
+    },
+    {
+      "id": "41ed"
+    },
+    {
+      "id": "5c07"
+    },
+    {
+      "id": "8459"
+    },
+    {
+      "id": "a3f6"
+    },
+    {
+      "id": "0fc2"
+    },
+    {
+      "id": "efe0"
+    },
+    {
+      "id": "7405"
+    },
+    {
+      "id": "183d"
+    }
+  ],
+  "products": [
+    {
+      "id": "11",
+      "name": "Product 1",
+      "price": 140000,
+      "ImageURL": "",
+      "sizes": [
+        {
+          "size": "S",
+          "stock": 15
+        },
+        {
+          "size": "M",
+          "stock": 20
+        },
+        {
+          "size": "L",
+          "stock": 35
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Product 2",
+      "price": 120000,
+      "ImageURL": "",
+      "sizes": [
+        {
+          "size": "S",
+          "stock": 10
+        },
+        {
+          "size": "M",
+          "stock": 15
+        },
+        {
+          "size": "L",
+          "stock": 25
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "name": "Product 3",
+      "price": 150000,
+      "ImageURL": "",
+      "sizes": [
+        {
+          "size": "S",
+          "stock": 15
+        },
+        {
+          "size": "M",
+          "stock": 20
+        },
+        {
+          "size": "L",
+          "stock": 35
+        }
+      ]
+    }
+  ],
+  "carts": [
+    {
+      "id": "1ad4"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "1ecc"
+    }
+  ]
+}
