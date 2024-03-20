@@ -17,6 +17,15 @@
       "username": "adminlama",
       "password": "123456",
       "role": "super_admin"
+    },
+    {
+      "id": "e6c3",
+      "firstName": "admin",
+      "lastName": "lama",
+      "email": "adminlamabanget@gmail.com",
+      "username": "adminlamabanget",
+      "password": "123456",
+      "role": "super_admin"
     }
   ],
   "products": [

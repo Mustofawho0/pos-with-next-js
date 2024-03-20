@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
 import HeaderDashboard from "~/components/core/HeaderDashboard";
-import { useCreateProductPage } from "~/api/useCreateProductMutation";
+import { useCreateProductPage } from "~/api/useCreateProduct";
 import { Formik, Field, Form } from "formik";
 
 const ProductPage = () => {
@@ -80,7 +80,10 @@ const ProductPage = () => {
                   <option value="second">Second</option>
                 </Field>
               </div>
-              <button type="submit" className="btn bg-orange-500 text-white w-full py-3 rounded-md hover:bg-black">
+              <button
+                type="submit"
+                className="btn bg-orange-500 text-white w-full py-3 rounded-md hover:bg-black"
+              >
                 Create Product
               </button>
             </div>

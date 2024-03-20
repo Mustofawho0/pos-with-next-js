@@ -2,7 +2,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { useCreateProductPage } from "~/api/useCreateProductMutation";
+import { useCreateProductPage } from "~/api/useCreateProduct";
 import HeaderDashboard from "~/components/core/HeaderDashboard";
 // import { CardProduct } from "../dashboard/CardProduct";
 import { CardProduct } from "../dashboard/CardProduct";

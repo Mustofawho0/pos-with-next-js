@@ -1,13 +1,17 @@
 "use client";
 
 import axios from "axios";
-import { useCreateAdminMutation } from "~/api/useCreateAdminMutation";
+import { useCreateAdminMutation } from "~/api/useCreateAdmin";
 // import { useZustandStores } from "~/zustandStores";
 import { toast } from "react-toastify";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { ValidasiRegister } from "~/supports/schema/registerSchema";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 export default function RegisterPage() {
+
+  const nav = useRouter()
+
  const {onHandleCreateAdmin, isLoading} = useCreateAdminMutation()
  
   return (
@@ -148,6 +152,7 @@ export default function RegisterPage() {
                       />
                     </label>
                     <button
+                    onClick={() => nav.push("/dashboard/product")}
                       className="btn bg-gray-700 text-white rounded-none hover:bg-red-400 my-6 w-[428px]"
                       type="submit"
                       disabled={!(dirty && isValid) || isLoading}
