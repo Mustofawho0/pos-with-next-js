@@ -9,9 +9,7 @@ export const useCreateAdminMutation = () => {
   const onHandleCreateAdmin = async (value, resetForm) => {
     try {
       setIsLoading(true);
-      await axios.post("http://localhost:5000/admin", {
-        value,
-      });
+      await axios.post("http://localhost:5000/users", value);
       toast.success("Create Admin Success");
       resetForm()
     } catch (error) {

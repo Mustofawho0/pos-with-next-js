@@ -1,207 +1,50 @@
 {
-  "admin": [
-    {
-      "id": "5944",
-      "value": {
-        "firstName": "admin",
-        "lastName": "baru",
-        "email": "adminbaru@gmail.com",
-        "username": "adminbaru",
-        "password": "123456",
-        "role": "admin"
-      }
-    },
-    {
-      "id": "c202",
-      "value": {
-        "firstName": "admin",
-        "lastName": "lama",
-        "email": "adminlama@gmail.com",
-        "username": "adminlama",
-        "password": "123456",
-        "role": "super_admin"
-      }
-    },
-    {
-      "id": "dab2",
-      "value": {
-        "firstName": "admin",
-        "lastName": "baru",
-        "email": "adminbarujoin@gmail.com",
-        "username": "adminbarujoin",
-        "password": "123456",
-        "role": "admin"
-      }
-    },
-    {
-      "id": "9566",
-      "value": {
-        "firstName": "adminbaru",
-        "lastName": "barubanget",
-        "email": "barubangetjadiadmin@gmail.com",
-        "username": "barujadiadmin",
-        "password": "123456",
-        "role": "admin"
-      }
-    }
-  ],
   "users": [
     {
-      "id": "fa7a",
+      "id": "5f7e",
       "firstName": "admin",
-      "lastName": "percobaan",
-      "email": "adminbercobaan@gmail.com",
-      "username": "adminpercobaan",
+      "lastName": "baru",
+      "email": "adminbaru@gmail.com",
+      "username": "adminbaru",
       "password": "123456",
       "role": "admin"
     },
     {
-      "id": "1604",
+      "id": "590e",
       "firstName": "admin",
-      "lastName": "percobaan",
-      "email": "adminbercobaan1@gmail.com",
-      "username": "adminpercobaan1",
+      "lastName": "lama",
+      "email": "adminlama@gmail.com",
+      "username": "adminlama",
       "password": "123456",
-      "role": "superadmin"
-    },
-    {
-      "id": "db24",
-      "firstName": "dwdw",
-      "lastName": "awdwd",
-      "email": "awdawd@gmail.com",
-      "username": " mustofawho",
-      "password": "123456"
-    },
-    {
-      "id": "7aab",
-      "firstName": "admin",
-      "lastName": "admin",
-      "email": "admin@gmail.com",
-      "username": "admininicobacoba",
-      "password": "123456"
-    },
-    {
-      "id": "f9e2"
-    },
-    {
-      "id": "a3d2"
-    },
-    {
-      "id": "8569"
-    },
-    {
-      "id": "2c12"
-    },
-    {
-      "id": "eaf1"
-    },
-    {
-      "id": "7211"
-    },
-    {
-      "id": "7919"
-    },
-    {
-      "id": "030b"
-    },
-    {
-      "id": "b156"
-    },
-    {
-      "id": "41ed"
-    },
-    {
-      "id": "5c07"
-    },
-    {
-      "id": "8459"
-    },
-    {
-      "id": "a3f6"
-    },
-    {
-      "id": "0fc2"
-    },
-    {
-      "id": "efe0"
-    },
-    {
-      "id": "7405"
-    },
-    {
-      "id": "183d"
+      "role": "super_admin"
     }
   ],
   "products": [
     {
-      "id": "11",
-      "name": "Product 1",
-      "price": 140000,
-      "ImageURL": "",
-      "sizes": [
-        {
-          "size": "S",
-          "stock": 15
-        },
-        {
-          "size": "M",
-          "stock": 20
-        },
-        {
-          "size": "L",
-          "stock": 35
-        }
-      ]
+      "id": "2588",
+      "name": "GTA 5",
+      "price": "500000",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png",
+      "description": "GTA 5 second like new",
+      "category": "second"
     },
     {
-      "id": "12",
-      "name": "Product 2",
-      "price": 120000,
-      "ImageURL": "",
-      "sizes": [
-        {
-          "size": "S",
-          "stock": 10
-        },
-        {
-          "size": "M",
-          "stock": 15
-        },
-        {
-          "size": "L",
-          "stock": 25
-        }
-      ]
+      "id": "ade3",
+      "name": "NFS HEAT",
+      "price": "500000",
+      "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202210/3121/XemhVDBuAEVrQXUkJF57ZsdX.jpg",
+      "description": "NFS HEAT NEW",
+      "category": "new"
     },
     {
-      "id": "13",
-      "name": "Product 3",
-      "price": 150000,
-      "ImageURL": "",
-      "sizes": [
-        {
-          "size": "S",
-          "stock": 15
-        },
-        {
-          "size": "M",
-          "stock": 20
-        },
-        {
-          "size": "L",
-          "stock": 35
-        }
-      ]
+      "id": "1987",
+      "name": "Battlefield 4",
+      "price": 5000000,
+      "imageUrl": "https://image.api.playstation.com/cdn/UP0006/CUSA00110_00/Z8LbhU901unhD5eAvEPLKEa2UeNMJTYj8Ux3tjHhY6ywnTd01omcSgplsKnO7La9.png",
+      "description": "Battlefield 4",
+      "category": "new"
     }
   ],
-  "carts": [
-    {
-      "id": "1ad4"
-    }
-  ],
-  "transactions": [
-    {
-      "id": "1ecc"
-    }
-  ]
+  "carts": [],
+  "transactions": []
 }

@@ -21,11 +21,11 @@ export default function Home() {
       role: data[0].role,
     });
     if (data[0].role === "admin") {
-      router.push("/dashboard");
+      router.push("/product-list");
       toast.success("Login Success");
-    } else if (data[0].role === "superadmin") {
+    } else if (data[0].role === "super_admin") {
       toast.success("Login Success");
-      router.push("/admin");
+      router.push("/dashboard/product");
     }
     // console.log(users)
   };

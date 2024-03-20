@@ -1,8 +1,19 @@
 // import HeaderDashboard from "~/components/cores/HeaderDashboard";
+"use client";
 
+import { useEffect } from "react";
+import { useCreateProductPage } from "~/api/useCreateProductMutation";
 import HeaderDashboard from "~/components/core/HeaderDashboard";
+// import { CardProduct } from "../dashboard/CardProduct";
+import { CardProduct } from "../dashboard/CardProduct";
 
 const ProductList = () => {
+  const { onHandleFetchProduct, products } = useCreateProductPage();
+
+  useEffect(() => {
+    onHandleFetchProduct();
+  }, []);
+
   return (
     <div className="grid grid-cols-12">
       <div className="col-span-9 px-14 py-10 h-[100vh]">
@@ -11,91 +22,30 @@ const ProductList = () => {
           <h1 className="text-lg font-bold">Categories</h1>
           <div className="grid grid-cols-12 gap-3">
             <button className="btn bg-transparent border border-black">
-              Food
+              New
             </button>
             <button className="btn bg-transparent border border-black">
-              Drink
-            </button>
-            <button className="btn bg-transparent border border-black">
-              Snack
+              Second
             </button>
           </div>
         </div>
         <div className="px-14 py-5">
           <h1 className="text-lg font-bold">Select Menu</h1>
           <div className="grid grid-cols-12 gap-3">
-            <div className="col-span-3">
-              <div className="card bg-base-100 shadow-xl">
-                <figure>
-                  <img
-                    src="https://www.foodandwine.com/thmb/mMJAvZyK09gP8_sIfViIVyMm_YE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/urdaburger-FT-RECIPE0621-f8488fae404d4ae686d612a7bb201fe3.jpg"
-                    alt="Shoes"
+            {products?.map((product, index) => {
+              return (
+                <div key={index} className="col-span-3">
+                  <CardProduct
+                    key={index}
+                    name={product.name}
+                    price={product.price}
+                    image={product.imageUrl}
+                    description={product.description}
+                    category={product.category}
                   />
-                </figure>
-                <div className="px-3 py-3">
-                  <h1 className="text-lg font-bold">Burger</h1>
-                  <p>
-                    This is burger with caramelized meat and slice of cheese
-                  </p>
-                  <p className="font-bold text-orange-500">Rp. 45.000, 00</p>
-                  <div className="card-actions justify-end"></div>
                 </div>
-              </div>
-            </div>
-            <div className="col-span-3">
-              <div className="card bg-base-100 shadow-xl">
-                <figure>
-                  <img
-                    src="https://www.foodandwine.com/thmb/mMJAvZyK09gP8_sIfViIVyMm_YE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/urdaburger-FT-RECIPE0621-f8488fae404d4ae686d612a7bb201fe3.jpg"
-                    alt="Shoes"
-                  />
-                </figure>
-                <div className="px-3 py-3">
-                  <h1 className="text-lg font-bold">Burger</h1>
-                  <p>
-                    This is burger with caramelized meat and slice of cheese
-                  </p>
-                  <p className="font-bold text-orange-500">Rp. 45.000, 00</p>
-                  <div className="card-actions justify-end"></div>
-                </div>
-              </div>
-            </div>
-            <div className="col-span-3">
-              <div className="card bg-base-100 shadow-xl">
-                <figure>
-                  <img
-                    src="https://www.foodandwine.com/thmb/mMJAvZyK09gP8_sIfViIVyMm_YE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/urdaburger-FT-RECIPE0621-f8488fae404d4ae686d612a7bb201fe3.jpg"
-                    alt="Shoes"
-                  />
-                </figure>
-                <div className="px-3 py-3">
-                  <h1 className="text-lg font-bold">Burger</h1>
-                  <p>
-                    This is burger with caramelized meat and slice of cheese
-                  </p>
-                  <p className="font-bold text-orange-500">Rp. 45.000, 00</p>
-                  <div className="card-actions justify-end"></div>
-                </div>
-              </div>
-            </div>
-            <div className="col-span-3">
-              <div className="card bg-base-100 shadow-xl">
-                <figure>
-                  <img
-                    src="https://www.foodandwine.com/thmb/mMJAvZyK09gP8_sIfViIVyMm_YE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/urdaburger-FT-RECIPE0621-f8488fae404d4ae686d612a7bb201fe3.jpg"
-                    alt="Burger"
-                  />
-                </figure>
-                <div className="px-3 py-3">
-                  <h1 className="text-lg font-bold">Burger</h1>
-                  <p>
-                    This is burger with caramelized meat and slice of cheese
-                  </p>
-                  <p className="font-bold text-orange-500">Rp. 45.000, 00</p>
-                  <div className="card-actions justify-end"></div>
-                </div>
-              </div>
-            </div>
+              );
+            })}
           </div>
         </div>
       </div>
